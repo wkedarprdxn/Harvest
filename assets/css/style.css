@@ -1,154 +1,388 @@
 @charset "utf-8";
+
 /* ==========================================================================
    1. CSS Reset Code
    ========================================================================== */
+
 
 /* 1.1. Eric Meyers Reset
    http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
    ========================================================================== */
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
-blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img,
-ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,
-dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody,
-tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure,
-figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
 
+
 /* Force scrollbar */
-html { overflow-y: scroll; }
+
+html {
+    overflow-y: scroll;
+}
+
 
 /* Align radios and text inputs with their label */
 
-input[type='radio'] { vertical-align: text-bottom; }
+input[type='radio'] {
+    vertical-align: text-bottom;
+}
+
 
 /* Hand cursor on clickable input elements */
+
 label,
 input[type='button'],
 input[type='submit'],
 button {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 strong {
-  font-weight: bold;
-  font-family: inherit;
-  font-size: inherit;
+    font-weight: bold;
+    font-family: inherit;
+    font-size: inherit;
 }
 
-em { font-style: italic; }
+em {
+    font-style: italic;
+}
 
 img {
-  width: 100%;
-  border: 0;
-  vertical-align: middle;
+    width: 100%;
+    border: 0;
+    vertical-align: middle;
 }
 
 sub,
 sup {
-  vertical-align: baseline;
-  position: relative;
-  font-size: 55%;
-  line-height: 0;
+    vertical-align: baseline;
+    position: relative;
+    font-size: 55%;
+    line-height: 0;
 }
 
-sup { top: -.7em; }
-sub { bottom: -.25em; }
+sup {
+    top: -.7em;
+}
+
+sub {
+    bottom: -.25em;
+}
+
 
 /* 1.2. Clear Fix
    ========================== */
 
 .cf:before,
 .cf:after {
-  display: table;
-  content: " ";
+    display: table;
+    content: " ";
 }
 
-.cf:after { clear: both; }
-.cf { *zoom: 1; }
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
+}
+
 
 /*for all*/
+
 body {
-  box-sizing: border-box;
-  font-family: sans-serif;
+    box-sizing: border-box;
+    font-family: sans-serif;
 }
 
-a { 
-  display: inline-block;
-  text-decoration: none; 
+a {
+    display: inline-block;
+    text-decoration: none;
 }
 
 li {
-  display: inline-block;
-  list-style-type: none;
+    display: inline-block;
+    list-style-type: none;
 }
 
+
 /*for wrapper*/
+
 .wrapper {
-  max-width: 1360px;
-  width: 86%; 
-  margin: 0 auto;
+    max-width: 1360px;
+    width: 86%;
+    margin: 0 auto;
 }
+
+.icon::before {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+
 /*=================================
   Header styling starts here
 =================================*/
 
+.head-sec1 {
+    display: flex;
+    justify-content: space-around;
+    margin: 15px 0px;
+}
 
+.head-sec1 h1 {
+    font-size: larger;
+    color: orangered;
+    margin: auto 0;
+    cursor: pointer;
+}
 
+.social-icons {
+    margin: auto 0;
+}
 
+.social-icons li a {
+    color: orangered;
+}
+
+nav ul li a {
+    padding: 10px;
+    margin: 0px 5px;
+    color: #1d1d1d;
+    text-transform: uppercase;
+    font-size: smaller;
+}
+
+nav ul li a:hover {
+    color: orangered;
+}
+
+.twitter::before {
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 900;
+    content: "\f099";
+}
+
+.linkedin::before {
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 900;
+    content: "\f0e1";
+}
+
+.facebook::before {
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 900;
+    content: "\f082";
+}
+
+.insta::before {
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 400;
+    content: "\f16d";
+}
+
+header .bg-img {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url('/assets/img/img-1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+}
+
+.head-sec2 {
+    position: relative;
+}
+
+.head-sec2 .block {
+    position: absolute;
+    right: 0;
+}
+
+.head-sec2 .block .item {
+    padding: 10px 201px 10px 10px;
+    bottom: 0;
+    right: 0;
+    transform: translate(0px, 300px);
+    background-color: orangered;
+    color: white;
+}
+
+.head-sec2 .block .item h2 {
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.head-sec2 .block .item p {
+    text-decoration: none;
+}
+
+.head-sec2 .block button {
+    bottom: 0;
+    transform: translate(0px, 320px);
+    padding: 10px 20px 10px 10px;
+    border: none;
+    outline: none;
+    color: orangered;
+    text-transform: uppercase;
+    position: relative;
+    background-color: white;
+    font-weight: bolder;
+}
+
+.head-sec2 .block button:hover {
+    background-color: #1d1d1d;
+}
+
+.head-sec2 .block button:active {
+    background-color: #a9c700;
+}
+
+.r-arrow::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: large;
+    content: "\f105";
+    position: absolute;
+    right: 5px;
+    bottom: 8px;
+}
 
 
 /*=================================
   Header styling ends here
-=================================*/  
+=================================*/
+
 
 /*=================================
   main styling starts here
 =================================*/
 
 
-
-
-
-
-
-
 /*=================================
   main styling ends here
 =================================*/
 
+
 /*=================================
   footer styling starts here
-=================================*/ 
+=================================*/
 
 
-
-
-
-
-
- /*=================================
+/*=================================
   footer styling ends here
-=================================*/ 
+=================================*/
+
 
 /*media query starts*/
+
+
 /*media query for 995px starts here*/
-@media only screen and (max-width: 995px) {
 
-
-
-}  
+@media only screen and (max-width: 995px) {}
