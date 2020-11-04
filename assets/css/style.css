@@ -268,24 +268,28 @@ nav ul li a:hover {
     font-family: "Font Awesome 5 Brands";
     font-weight: 900;
     content: "\f099";
+    margin: 0 5px;
 }
 
 .linkedin::before {
     font-family: "Font Awesome 5 Brands";
     font-weight: 900;
     content: "\f0e1";
+    margin: 0 5px;
 }
 
 .facebook::before {
     font-family: "Font Awesome 5 Brands";
     font-weight: 900;
     content: "\f082";
+    margin: 0 5px;
 }
 
 .insta::before {
     font-family: "Font Awesome 5 Brands";
     font-weight: 400;
     content: "\f16d";
+    margin: 0 5px;
 }
 
 header .bg-img {
@@ -394,7 +398,7 @@ header .bg-img {
 
 .services ul {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(5, minmax(0, 1fr));
     gap: 10px;
 }
 
@@ -493,20 +497,23 @@ header .bg-img {
 }
 
 .touch .block form .sec1 input {
-    width: 96%;
+    width: 100%;
     padding: 10px;
     border: none;
     outline: none;
+    box-sizing: border-box;
 }
 
 .touch .block form .sec2 textarea {
     width: 100%;
     border: none;
     outline: none;
+    box-sizing: border-box;
 }
 
 .text-deco {
     color: orangered;
+    cursor: pointer;
 }
 
 .touch .block form .sec2 input[type=submit] {
@@ -518,6 +525,10 @@ header .bg-img {
     background-color: orangered;
     color: white;
     padding: 10px 18px;
+}
+
+.touch .block form .sec2 input[type=submit]:hover {
+    background-color: #1d1d1d;
 }
 
 
@@ -541,6 +552,10 @@ footer {
 footer .row .sec1,
 .sec2 {
     display: inline-block;
+}
+
+footer .row .sec1 {
+    margin-right: 50px;
 }
 
 footer .row .sec1 ul li {
@@ -618,6 +633,10 @@ footer .row .sec2 ul li a {
     margin: 25px auto;
 }
 
+.foot-icon ul li a {
+    color: white;
+}
+
 
 /*=================================
   footer styling ends here
@@ -629,4 +648,58 @@ footer .row .sec2 ul li a {
 
 /*media query for 995px starts here*/
 
-@media only screen and (max-width: 995px) {}
+@media only screen and (max-width: 995px) {
+    nav,
+    .social-icons {
+        display: none;
+    }
+    .services ul {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 10px;
+    }
+    .whoWork .block ul {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 10px;
+    }
+    .affiliation .block ul {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 10px;
+    }
+    .help p {
+        width: 100%;
+    }
+    .touch .block .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    /* .touch .block form select {
+        width: 101%;
+    }
+    .touch .block form .sec1 input {
+        width: 98%;
+    } */
+}
+
+@media only screen and (max-width: 500px) {
+    .services ul {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+    }
+    .whoWork .block ul {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+    }
+    .affiliation .block ul {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+    }
+    /* .touch .block form select {
+        width: 102%;
+    } */
+}
