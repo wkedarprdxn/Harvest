@@ -530,6 +530,94 @@ header .bg-img {
   footer styling starts here
 =================================*/
 
+footer {
+    padding: 35px 0px 10px;
+}
+
+.bg-color-bg {
+    background-color: rgb(47, 47, 47);
+}
+
+footer .row .sec1,
+.sec2 {
+    display: inline-block;
+}
+
+footer .row .sec1 ul li {
+    position: relative;
+}
+
+.call::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f879";
+    position: absolute;
+    left: 0;
+}
+
+.message::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f0e0";
+    position: absolute;
+    left: 0;
+}
+
+.location::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f3c5";
+    position: absolute;
+    left: 0;
+}
+
+footer .row .sec1 h2 {
+    font-size: larger;
+    color: white;
+    padding: 15px 0px;
+}
+
+footer .row .sec2 h2 {
+    font-size: larger;
+    color: white;
+    padding: 15px 0px;
+}
+
+footer .row {
+    margin-bottom: 20px;
+}
+
+footer .row .sec1 ul {
+    display: flex;
+    flex-flow: column;
+}
+
+footer .row .sec1 ul li a {
+    padding: 15px 25px;
+    color: white;
+}
+
+footer .row .sec2 ul {
+    display: flex;
+    flex-flow: column;
+}
+
+footer .row .sec2 ul li a {
+    /* padding: 15px; */
+    line-height: 2em;
+    color: white;
+}
+
+.foot-1,
+.foot-icon {
+    text-align: center;
+    color: white;
+}
+
+.foot-icon {
+    margin: 25px auto;
+}
+
 
 /*=================================
   footer styling ends here
