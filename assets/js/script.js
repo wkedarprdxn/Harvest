@@ -31,4 +31,17 @@ $(document).ready(function() {
     $("body").on("click", "#light-box span", function() {
         $("#light-box").hide();
     });
+    // *******************our work start*****************
+    $('.filter-btn').click(function() {
+        $('.filter-btn').removeClass('active').addClass('inactive');
+        $(this).removeClass('inactive').addClass('active');
+        var val = $(this).attr('data-filter');
+        if (val == "all") {
+            $('.filter').show('1000');
+        } else {
+            $('.filter').not('.' + val).hide(1000);
+            $('.filter').filter('.' + val).show(1000);
+        }
+    });
+    // *******************our work end*****************
 });
