@@ -700,6 +700,53 @@ header .bg-img {
 }
 
 
+/* ************************OUR WORK start********************* */
+
+.ow-main {
+    padding: 30px 0px;
+}
+
+.ow-main-sec1 {
+    text-align: center;
+    margin: 30px auto;
+}
+
+.ow-main-sec1 ul li button {
+    border: none;
+    outline: none;
+    padding: 10px;
+    background: transparent;
+    text-transform: uppercase;
+}
+
+.ow-main-sec1 ul li:not(:last-child)::after {
+    content: "/";
+    margin-left: 8px;
+    color: gainsboro;
+}
+
+.ow-main-sec1 ul li button:hover {
+    color: orangered;
+}
+
+.ow-main-sec2 ul {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.active {
+    color: orangered;
+}
+
+.inactive {
+    color: #1d1d1d;
+}
+
+
+/* ************************OUR WORK end********************* */
+
+
 /*=================================
   main styling ends here
 =================================*/
@@ -873,6 +920,13 @@ footer .row .foot-sec2 ul li a:hover {
     footer .row .sec1 {
         width: 50%;
     }
+    /* *************our work start************** */
+    .ow-main-sec2 ul {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 20px;
+    }
+    /* *************our work end************** */
 }
 
 @media only screen and (max-width: 500px) {
@@ -894,4 +948,15 @@ footer .row .foot-sec2 ul li a:hover {
     footer .row .sec1 {
         width: 100%;
     }
+    /* *************our work start************** */
+    .ow-main-sec2 ul {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
+    }
+    .ow-main-sec1 {
+        text-align: center;
+        margin: 10px auto;
+    }
+    /* *************our work end************** */
 }
