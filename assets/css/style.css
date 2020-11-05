@@ -702,6 +702,14 @@ header .bg-img {
 
 /* ************************OUR WORK start********************* */
 
+header .bg-img-ourW {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url("../img/img-3.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+}
+
 .ow-main {
     padding: 30px 0px;
 }
