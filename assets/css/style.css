@@ -755,6 +755,235 @@ header .bg-img-ourW {
 /* ************************OUR WORK end********************* */
 
 
+/* ************************JOIN US START********************* */
+
+header .bg-img-joinus {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url("../img/img-2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+}
+
+.ju-main-sec1 {
+    text-align: center;
+    padding: 20px 0px;
+    margin: 10px auto;
+    color: #555555;
+}
+
+.ju-main-sec1 h2 {
+    font-size: xx-large;
+    color: orangered;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px black;
+}
+
+.ju-main-sec1 p {
+    line-height: 2em;
+}
+
+.ju-main-sec1 .ju-btn {
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    margin: 15px auto;
+    color: #555555;
+}
+
+.ju-main-sec1 .ju-btn:hover {
+    background-color: orangered;
+    color: white;
+    text-shadow: 1px 1px black;
+}
+
+.ju-main-sec1 .ju-btn:active {
+    background-color: rgba(51, 0, 0, 0.876);
+    color: white;
+    text-shadow: 1px 1px black;
+}
+
+
+/* --------sec2---------- */
+
+.what-it-means {
+    padding: 30px 0px;
+}
+
+.ju-main-sec h2 {
+    text-align: center;
+    font-size: larger;
+    text-transform: uppercase;
+    padding: 30px 0px;
+}
+
+.what-it-means .flex {
+    display: flex;
+}
+
+.what-it-means .flex .item {
+    flex: 50%;
+}
+
+.what-it-means .flex .item p {
+    line-height: 2em;
+    color: #555555;
+}
+
+.what-it-means .flex .item img {
+    height: 300px;
+}
+
+
+/* -------sec 3------- */
+
+.bg-light {
+    background-color: #eeeeee;
+}
+
+.benefits {
+    padding: 30px 0px 50px;
+}
+
+.benefits h2 {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: larger;
+    text-align: center;
+    padding: 30px 0px;
+}
+
+.benefits .flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.benefits .flex .item {
+    flex: 33.33%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.benefits .flex .item figure {
+    display: inline-block;
+}
+
+.benefits .flex .item figure img {
+    border-radius: 50%;
+}
+
+.benefits .flex .item p {
+    display: inline-block;
+    color: #555555;
+    margin-left: 10px;
+}
+
+
+/* -------sec 4--------- */
+
+.harv-values .flex {
+    display: flex;
+    box-sizing: border-box;
+}
+
+.harv-values .flex .item {
+    flex: 25%;
+    border: solid 1px orangered;
+    margin: 20px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    background-color: #D8D8D8;
+}
+
+.center p {
+    padding: 80px 0px;
+    color: orangered;
+    font-weight: bolder;
+    text-transform: uppercase;
+    text-shadow: .5px .5px black;
+}
+
+
+/* -------current opportunites------- */
+
+.current-op {
+    padding: 30px 0px;
+}
+
+.current-op h2 {
+    font-size: larger;
+    text-transform: uppercase;
+    padding: 30px 0px;
+}
+
+.current-op .category select {
+    padding: 10px;
+    border: none;
+    outline: none;
+    box-shadow: 1px 1px 1px 1px #c3c3c3dc;
+    border-radius: 3px;
+    margin: 5px 0px 30px;
+}
+
+.current-op .category .flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.current-op .category .flex .ft-item {
+    flex: 100%;
+    padding: 15px 10px;
+    box-shadow: 1px 1px 1px 1px #c3c3c3dc;
+}
+
+.current-op .category .flex .ft-item .sub-item h4 {
+    color: orangered;
+}
+
+.current-op .category .flex .ft-item .sub-item ul li a {
+    color: orangered;
+}
+
+.current-op .category .flex .ft-item .sub-item ul li a:hover {
+    background-color: #1d1d1d;
+    color: white;
+}
+
+.current-op .category .flex .ft-item .sub-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.current-op .category .flex .ft-item .sub-item ul li {
+    margin: 0px 5px;
+    color: #555555;
+}
+
+.building::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f1ad";
+}
+
+.half-circle::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f111";
+}
+
+.a-right::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f061";
+}
+
+
+/* ************************JOIN US END********************* */
+
+
 /*=================================
   main styling ends here
 =================================*/
@@ -935,6 +1164,20 @@ footer .row .foot-sec2 ul li a:hover {
         gap: 20px;
     }
     /* *************our work end************** */
+    /* ************join us start************ */
+    .harv-values .flex {
+        flex-wrap: wrap;
+    }
+    .harv-values .flex .item {
+        flex: 44%;
+    }
+    .current-op .category .flex .ft-item .sub-item h4 {
+        flex: 50%;
+    }
+    .current-op .category .flex .ft-item .sub-item ul {
+        flex: 50%;
+    }
+    /* ************join us end************ */
 }
 
 @media only screen and (max-width: 500px) {
@@ -967,4 +1210,31 @@ footer .row .foot-sec2 ul li a:hover {
         margin: 10px auto;
     }
     /* *************our work end************** */
+    /* ********join us start********** */
+    .harv-values .flex .item {
+        flex: 100%;
+    }
+    .what-it-means .flex {
+        flex-wrap: wrap;
+    }
+    .what-it-means .flex .item {
+        flex: 100%;
+    }
+    .benefits .flex .item p {
+        text-align: center;
+        margin-left: unset!important;
+    }
+    .foot-sec2 {
+        margin-top: 40px;
+    }
+    /* ********join us end********** */
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+    .benefits .flex .item {
+        flex: 50%;
+    }
+    .harv-values .flex .item {
+        flex: 43%;
+    }
 }
