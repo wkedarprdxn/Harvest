@@ -44,4 +44,15 @@ $(document).ready(function() {
         }
     });
     // *******************our work end*****************
+    // *********************join us start**********************
+    $('.category select').change(function() {
+        var item = $(this).attr('value');
+        if (item == "all") {
+            $('.ft-item').show('1000');
+        } else {
+            $('.ft-item').not('.' + item).hide(1000);
+            $('.ft-item').filter('.' + item).show(1000);
+        }
+    });
+    // *********************join us end**********************
 });
