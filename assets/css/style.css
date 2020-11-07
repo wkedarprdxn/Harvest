@@ -698,6 +698,10 @@ header .bg-img {
     box-sizing: border-box;
 }
 
+.touch .block form .sec1 p:not(:first-child) {
+    margin-top: 10px;
+}
+
 .touch .block form .sec2 textarea {
     width: 100%;
     border: none;
