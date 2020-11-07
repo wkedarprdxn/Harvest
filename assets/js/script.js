@@ -31,6 +31,13 @@ $(document).ready(function() {
     $("body").on("click", "#light-box span", function() {
         $("#light-box").hide();
     });
+    $('.head-sec1 h1').click(function() {
+        window.location.href = "index.html";
+    });
+    $('.privacy').css('background-color', '#f5f5f5');
+    $('.privacy').click(function() {
+        location.href = '#';
+    });
     // *******************our work start*****************
     $('.filter-btn').click(function() {
         $('.filter-btn').removeClass('active').addClass('inactive');
