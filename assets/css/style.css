@@ -600,15 +600,15 @@ header .bg-img {
 
 .privacy {
     position: absolute;
-    width: 50px;
+    width: 35px;
     height: 70px;
     right: 0;
-    top: 140%;
+    top: 60%;
     font-size: x-small;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    box-shadow: 0 0 10px #797876;
+    box-shadow: 0 0 8px #797876;
     cursor: pointer;
 }
 
@@ -1189,6 +1189,9 @@ footer .row .foot-sec2 ul li a:hover {
     }
     footer .row .sec1 {
         width: 50%;
+    }
+    .privacy {
+        top: 130%;
     }
     /* *************our work start************** */
     .ow-main-sec2 ul {
