@@ -1148,6 +1148,47 @@ footer .row .foot-sec2 ul li a:hover {
 =================================*/
 
 
+/*=================================
+    scroll up button css stars here
+=================================*/
+
+.a-up::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f062";
+    color: white;
+}
+
+.scrollToTop {
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 50%;
+    background-color: rgba(153, 205, 50, 0.705);
+    color: #444;
+    text-decoration: none;
+    font-size: x-large;
+    color: yellowgreen;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    display: none;
+    z-index: 999;
+    border: none;
+    outline: none;
+}
+
+.scrollToTop:hover .icon::before {
+    text-decoration: none;
+    color: orangered;
+}
+
+
+/*=================================
+    scroll up button css stars here
+=================================*/
+
+
 /*media query starts*/
 
 
